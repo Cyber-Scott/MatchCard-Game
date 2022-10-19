@@ -1,5 +1,20 @@
 
 
+h1, h3{
+  font-family: 'lato';
+/* text-align: center; */
+color: #fff;
+font-weight:900;
+}
+
+main{
+  background: linear-gradient(rgba(0, 0, 0, 0.1) , rgba(0, 0, 0, 0.1)) ,url(./8.png);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+}
+
 .card {
     perspective: 1000px;
 }
@@ -49,5 +64,9 @@
 
   .card__back {
     transform: rotateY(180deg);
+    font-size: 1px;
   }
 
+  .btn_div{
+    color: #555;
+  }

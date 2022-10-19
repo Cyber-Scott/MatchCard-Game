@@ -1,6 +1,6 @@
 
 var cadArr, cardBack, theScore, show, loose, easy, a,cad, wrong, correct, 
-mainScore, clap, theScore, hard, cardNum, down, pick, initNum, score, scoreKeep, difficulty;
+mainScore, clap, theScore, hard, cardNum, down, pick, initNum, score, scoreKeep, difficulty, shuffledNumber;
 
 cardNum = document.querySelectorAll(".card__front");
 cardBack = document.querySelectorAll(".card__back");
@@ -161,7 +161,7 @@ function shuffle(cadArr){
 
 function reset(){
     for(var i = 0; i < cardNum.length; i++){
-        cardNum[i].textContent = '#';
+        cardNum[i].textContent = 'A';
         cardNum[i].style.background = '#bf0135';
     }
 
@@ -192,8 +192,8 @@ function theReset(){
 
 
 function click(){
-    score[0].style.background = 'white';
-    score[1].style.background = 'white';
+    // score[0].style.background = 'white';
+    // score[1].style.background = 'white';
 
     theScore++;
     mainScore.textContent = theScore;
@@ -210,7 +210,11 @@ if(cardBack[a].style.background !== 'white'){
 
     cad = cardBack[a];
 
-    cardBack[a].textContent = [cadArr[a]];
+    shuffledNumber = [cadArr[a]]
+
+    cardBack[a].style.backgroundImage = `url('${shuffledNumber}.png')`;
+    cardBack[a].style.backgroundSize = 'Cover';
+    cardBack[a].textContent = shuffledNumber;
     flipped();
 
     if(score.length < 2){
@@ -251,13 +255,13 @@ function gameOver(){
     if(theScore === 6 && difficulty === 'easy'){
         clap.play();
         setTimeout(() => {
-            alert('====YOU WIN====Click -OK- to PLAY AGAIN');
+            alert('====BEK BEK====Click -OK- to PLAY AGAIN');
             document.location.reload();
         }, 1200);
     } else if(theScore === 8 && difficulty === 'hard'){
         clap.play();
         setTimeout(() => {
-            alert('====YOU WIN====Click -OK- to PLAY AGAIN');
+            alert('====BEK BEK====Click -OK- to PLAY AGAIN');
             document.location.reload();   
         }, 1200);
     }
