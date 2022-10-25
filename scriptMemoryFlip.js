@@ -161,8 +161,8 @@ function shuffle(cadArr){
 
 function reset(){
     for(var i = 0; i < cardNum.length; i++){
-        cardNum[i].textContent = 'A';
-        cardNum[i].style.background = '#bf0135';
+        cardNum[i].textContent = 'B';
+        cardNum[i].style.background = '#0075c4';
     }
 
     if(difficulty === 'easy'){
@@ -255,13 +255,13 @@ function gameOver(){
     if(theScore === 6 && difficulty === 'easy'){
         clap.play();
         setTimeout(() => {
-            alert('====BEK BEK====Click -OK- to PLAY AGAIN');
+            alert('====BRUH====Click -OK- to PLAY AGAIN');
             document.location.reload();
         }, 1200);
     } else if(theScore === 8 && difficulty === 'hard'){
         clap.play();
         setTimeout(() => {
-            alert('====BEK BEK====Click -OK- to PLAY AGAIN');
+            alert('====BRUH====Click -OK- to PLAY AGAIN');
             document.location.reload();   
         }, 1200);
     }

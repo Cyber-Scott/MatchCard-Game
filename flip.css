@@ -1,14 +1,17 @@
-
+/* @font-face{
+  font-family: 'silk';
+  src: url('slkscreb.ttf')
+} */
 
 h1, h3{
-  font-family: 'lato';
+  font-family: sans-serif;
 /* text-align: center; */
 color: #fff;
 font-weight:900;
 }
 
 main{
-  background: linear-gradient(rgba(0, 0, 0, 0.1) , rgba(0, 0, 0, 0.1)) ,url(./8.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.1) , rgba(0, 0, 0, 0.1)) ,url(./3.png);
   height: 100vh;
   background-position: center;
   background-size: cover;
