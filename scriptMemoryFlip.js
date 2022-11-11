@@ -161,8 +161,11 @@ function shuffle(cadArr){
 
 function reset(){
     for(var i = 0; i < cardNum.length; i++){
-        cardNum[i].textContent = 'B';
-        cardNum[i].style.background = '#0075c4';
+        // cardNum[i].textContent = 'H';
+        // cardNum[i].style.background = '#0d0d16';
+
+        cardNum[i].style.backgroundImage = `url('./homa.jpg')`;
+        cardNum[i].style.backgroundSize = 'Cover';
     }
 
     if(difficulty === 'easy'){
@@ -212,7 +215,7 @@ if(cardBack[a].style.background !== 'white'){
 
     shuffledNumber = [cadArr[a]]
 
-    cardBack[a].style.backgroundImage = `url('${shuffledNumber}.png')`;
+    cardBack[a].style.backgroundImage = `url('${shuffledNumber}.jpg')`;
     cardBack[a].style.backgroundSize = 'Cover';
     cardBack[a].textContent = shuffledNumber;
     flipped();
@@ -255,13 +258,13 @@ function gameOver(){
     if(theScore === 6 && difficulty === 'easy'){
         clap.play();
         setTimeout(() => {
-            alert('====BRUH====Click -OK- to PLAY AGAIN');
+            alert('==== HGMI ====Click -OK- to PLAY AGAIN');
             document.location.reload();
         }, 1200);
     } else if(theScore === 8 && difficulty === 'hard'){
         clap.play();
         setTimeout(() => {
-            alert('====BRUH====Click -OK- to PLAY AGAIN');
+            alert('==== HGMI ====Click -OK- to PLAY AGAIN');
             document.location.reload();   
         }, 1200);
     }
