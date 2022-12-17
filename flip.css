@@ -6,7 +6,7 @@
 h1, h3{
   font-family: sans-serif;
 /* text-align: center; */
-color: #fff;
+color: #0f0f19;
 font-weight:900;
 }
 
@@ -70,7 +70,8 @@ main{
     font-size: 1px;
   }
 
-  .btn_div{
+  .btn-div h1{
     color: #555;
   }
+  .btn-div .selected{color: #fff;}
   p{opacity: 0}
