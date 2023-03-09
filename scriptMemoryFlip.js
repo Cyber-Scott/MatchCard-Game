@@ -258,13 +258,13 @@ function gameOver(){
     if(theScore === 6 && difficulty === 'easy'){
         clap.play();
         setTimeout(() => {
-            alert('==== HGMI ====Click -OK- to PLAY AGAIN');
+            alert('==== DEVS GMI ====Click -OK- to PLAY AGAIN');
             document.location.reload();
         }, 1200);
     } else if(theScore === 8 && difficulty === 'hard'){
         clap.play();
         setTimeout(() => {
-            alert('==== HGMI ====Click -OK- to PLAY AGAIN');
+            alert('==== DEVS GMI ====Click -OK- to PLAY AGAIN');
             document.location.reload();   
         }, 1200);
     }
